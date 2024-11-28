@@ -121,11 +121,8 @@
     font-size: 13px;
 }
 /* login */
-.login{
-   float:right;
-   margin-top:0;
-   margin-left: 0;
-   padding: 0;
+#Login:hover{
+    color:#f5cc4f;
 }
 
 .mySlides {
@@ -325,29 +322,34 @@
     border-radius: 50%;
     border:dashed 2px rgb(191, 187, 187);
     margin:0 35px;
-    
+    overflow: hidden;
+    position: relative;
+      
 }
 .skill-img{
     height: 165px;
     width:165px;
     border-radius: 50%;
 }
-.skill-img:hover{
-    visibility: hidden;
-}
 .skill-description{
     position: absolute;
-    font-size: 14px;
+    font-size: 12px !important;
     line-height: 24px;
     color: #454545;
     text-align: center;
     width: 100%;
     height: 100%;
     top: 0;
-    padding-top: 50px;
     opacity: 0;
+    padding-top: 50px;
     transition: all 300ms ease-in-out 0s;
     left: 0;   
+    font-family: sans-serif !important;
+}
+.skill-description:hover{
+    opacity: 1;
+    z-index: 5;
+    background-color:rgba(247, 243, 243, 0.901);
 }
 .skill-all p{
     font-size:20px;
@@ -490,17 +492,15 @@
     width: 262px;
     height: 232px;
 }
-/* .img-slider:hover{
-    animation:slide 20s  infinite 2s;
-} */
-@keyframes slide{
+
+/* @keyframes slide{
     0% {
        transform: translate(0);
     }
     100% {
         transform: translate(-20%);
     }
-} 
+}  */
 
 /* factbox */
 .fact-section{
@@ -733,7 +733,3 @@ span.simple-line {
     list-style-type:">>" ;
     list-style-position: outside;
 }
-/* canvas {
-    display: block;
-    z-index: -3;
-  } */
